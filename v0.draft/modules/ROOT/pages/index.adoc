@@ -1,0 +1,133 @@
+= Stationsmeetdata
+
+This data product provides historical data for measurements done at the
+MV-level of the electrical grid.
+
+.Data Product
+[d2,svg,theme=4]
+----
+grid-rows: 5
+grid-columns: 4
+
+horizontal-gap: 160
+vertical-gap: 80
+
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+
+1.class: empty
+PSRType.class: grid
+2.class: empty
+3.class: empty
+
+Substation.class: dataset
+ConductingEquipment.class: grid
+Analog.class: grid
+AnalogValue.class: grid
+
+VoltageLevel.class: grid
+BaseVoltage.class: grid
+4.class: empty
+5.class: empty
+
+Bay.class: grid
+6.class: empty
+7.class: empty
+8.class: empty
+
+Substation -> VoltageLevel: "voltage_levels"
+VoltageLevel -> Bay: "bays"
+ConductingEquipment -> Analog: "measurements"
+Analog -> AnalogValue: "analog_values"
+ConductingEquipment -> PSRType: "psrtype"
+VoltageLevel -> BaseVoltage: "base_voltage"
+Substation -> ConductingEquipment: "equipments"
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+
+classes: {
+  empty: {
+    label: ""
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+  }
+  grid: {
+    style: {
+      fill: "#eccfcb"
+      shadow: true
+    }
+  }
+  enterprise: {
+    style: {
+      fill: "#d1e7c2"
+      shadow: true
+    }
+  }
+  market: {
+    style: {
+      fill: "#fffbef"
+      shadow: true
+    }
+  }
+  dataset: {
+    style: {
+      shadow: true
+    }
+  }
+}
+----
+
+== Additional artifacts
+
+* xref:schema:attachment$schemas/json_schema/dp_stationsmeetdata.json_schema.json[JSON schema]
+* xref:schema:attachment$examples/dp_stationsmeetdata.example.json[Example JSON instance data]

@@ -1,0 +1,94 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/Substation.adoc[`Substation` (root)]
+
+*** xref::class/ACDCTerminal.adoc[`ACDCTerminal`]
+
+
+
+*** xref::class/Analog.adoc[`Analog`]
+
+
+
+*** xref::class/AnalogValue.adoc[`AnalogValue`]
+
+
+
+*** xref::class/BaseVoltage.adoc[`BaseVoltage`]
+
+
+
+*** xref::class/Bay.adoc[`Bay`]
+
+
+
+*** xref::class/ConductingEquipment.adoc[`ConductingEquipment`]
+
+
+
+*** xref::class/ConnectivityNodeContainer.adoc[`ConnectivityNodeContainer`]
+
+
+
+*** xref::class/Equipment.adoc[`Equipment`]
+
+
+
+*** xref::class/EquipmentContainer.adoc[`EquipmentContainer`]
+
+
+
+*** xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+
+
+
+*** xref::class/IOPoint.adoc[`IOPoint`]
+
+
+
+*** xref::class/Measurement.adoc[`Measurement`]
+
+
+
+*** xref::class/MeasurementValue.adoc[`MeasurementValue`]
+
+
+
+*** xref::class/Name.adoc[`Name`]
+
+
+
+*** xref::class/NameType.adoc[`NameType`]
+
+
+
+*** xref::class/NameTypeAuthority.adoc[`NameTypeAuthority`]
+
+
+
+*** xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
+
+
+
+*** xref::class/PSRType.adoc[`PSRType`]
+
+
+
+
+*** xref::class/Terminal.adoc[`Terminal`]
+
+
+
+*** xref::class/VoltageLevel.adoc[`VoltageLevel`]
+
+
+
+** CIM data types
+*** xref::class/Voltage.adoc[`Voltage`]
+
+
+** Enumerations
+*** xref::enumeration/UnitMultiplier.adoc[`UnitMultiplier`]
+*** xref::enumeration/UnitSymbol.adoc[`UnitSymbol`]

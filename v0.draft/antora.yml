@@ -1,0 +1,6 @@
+name: dp-stationsmeetdata
+version: v0.draft
+title: Stationsmeetdata
+nav:
+- modules/ROOT/nav.adoc
+- modules/schema/nav.adoc
