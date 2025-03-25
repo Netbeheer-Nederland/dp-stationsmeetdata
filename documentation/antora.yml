@@ -1,0 +1,5 @@
+name: dp-stationsmeetdata
+title: Stationsmeetdata
+version: true
+nav:
+- modules/ROOT/nav.adoc
